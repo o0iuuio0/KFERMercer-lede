@@ -30,5 +30,10 @@ add luci-lib-docker
 #git clone https://github.com/lisaac/luci-lib-docker.git package/luci-lib-docker
 add luci-app-jd-dailybonus
 git clone https://github.com/jerrykuku/luci-app-jd-dailybonus.git package/luci-app-jd-dailybonus
+add luci-app-diskman
+mkdir -p package/luci-app-diskman && \
+wget https://raw.githubusercontent.com/lisaac/luci-app-diskman/master/Makefile -O package/luci-app-diskman/Makefile
+mkdir -p package/parted && \
+wget https://raw.githubusercontent.com/lisaac/luci-app-diskman/master/Parted.Makefile -O package/parted/Makefile
 ./scripts/feeds update -a
 ./scripts/feeds install -a

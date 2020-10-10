@@ -26,7 +26,9 @@ add luci-app-oaf
 #git clone https://github.com/destan19/OpenAppFilter.git package/luci-app-oaf
 add luci-app-dockerman
 #git clone https://github.com/lisaac/luci-app-dockerman.git package/luci-app-dockerman
-add luci-lib-docker
+add luci-app-oaf
+git clone https://github.com/jerrykuku/luci-app-argon-config.git package/luci-app-argon-config
+add luci-app-argon-config
 #git clone https://github.com/lisaac/luci-lib-docker.git package/luci-lib-docker
 add luci-app-jd-dailybonus
 git clone https://github.com/jerrykuku/luci-app-jd-dailybonus.git package/luci-app-jd-dailybonus
